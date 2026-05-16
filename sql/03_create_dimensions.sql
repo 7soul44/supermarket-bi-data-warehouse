@@ -1,4 +1,8 @@
--- CREATE DIMENSIONS --
+-- =====================================================
+-- Project: Supermarket BI Data Warehouse
+-- Script: 03_create_dimensions.sql
+-- Purpose: Create dimension tables for star schema
+-- =====================================================
 
 USE SupermarketDW;
 GO
