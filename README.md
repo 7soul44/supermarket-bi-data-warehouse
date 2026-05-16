@@ -21,6 +21,15 @@ Dimitris Kympizis
 
 ## Architecture
 
+### ETL Control Flow
+![ETL Control Flow](docs/architecture_etl_flow.png)
+
+### Data Flow Pipeline
+![Data Flow](docs/data_flow_pipeline.png)
+
+### Star Schema Model
+![Star Schema](docs/star_schema_model.png)
+
 CSV Dataset  
 → SSIS ETL Process  
 → SQL Server Staging Table  
