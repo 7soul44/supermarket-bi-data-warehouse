@@ -84,6 +84,23 @@ These scripts create the database structure and support the loading process from
 
 ## Power BI Dashboards
 
+### Dashboard Screenshots
+
+#### Overview
+![Overview](powerbi/powerbi_overview.png)
+
+#### Customer Analysis
+![Customer](powerbi/powerbi_customer_analysis.png)
+
+#### Product Intelligence
+![Product](powerbi/powerbi_product_analysis.png)
+
+#### Location Intelligence
+![Location](powerbi/powerbi_location_analysis.png)
+
+#### Data Model
+![Model](powerbi/powerbi_data_model.png)
+
 The project includes interactive Power BI dashboards focused on four analytical areas:
 
 ### Sales Performance Overview
