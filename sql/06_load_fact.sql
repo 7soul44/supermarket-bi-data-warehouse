@@ -1,4 +1,8 @@
---LOAD FACT TABLE--
+-- =====================================================
+-- Project: Supermarket BI Data Warehouse
+-- Script: 06_load_fact.sql
+-- Description: Load fact table by joining staging data with dimension tables
+-- =====================================================
 
 USE SupermarketDW;
 GO
@@ -33,6 +37,9 @@ SELECT
     s.GrossIncome,
     s.Rating
 FROM dbo.stg_supermarket_sales s
+
+-- Join staging table with dimensions to retrieve surrogate keys
+    
 JOIN dbo.Dim_Date d
     ON d.FullDate = TRY_CONVERT(DATE, s.SaleDate, 101)
 JOIN dbo.Dim_Product p
