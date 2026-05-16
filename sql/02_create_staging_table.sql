@@ -1,4 +1,8 @@
--- CREATE STAGING TABLE--
+-- =====================================================
+-- Project: Supermarket BI Data Warehouse
+-- Script: 02_create_staging_table.sql
+-- Purpose: Create staging table for raw data loading
+-- =====================================================
 
 USE SupermarketDW;
 GO
