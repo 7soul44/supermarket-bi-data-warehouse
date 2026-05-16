@@ -13,7 +13,7 @@ The goal of the project is to analyze sales performance across different busines
 
 The dataset contains transactional data from a supermarket, including product details, customer information, branch locations, payment methods and financial metrics such as sales, cost and profit.
 
-Source: Kaggle - Supermarket Sales Dataset
+Source: Kaggle - Supermarket Sales Dataset (public dataset)
 
 ## Author
 
@@ -21,7 +21,10 @@ Dimitris Kympizis
 
 ## Architecture
 
+The following diagrams illustrate the ETL workflow, data transformation pipeline, and final data warehouse schema.
+
 ### ETL Control Flow
+
 ![ETL Control Flow](docs/architecture_etl_flow.png)
 
 ### Data Flow Pipeline
@@ -31,11 +34,12 @@ Dimitris Kympizis
 ![Star Schema](docs/star_schema_model.png)
 
 CSV Dataset  
-→ SSIS ETL Process  
-→ SQL Server Staging Table  
-→ Dimension Tables  
-→ Fact Table  
-→ Power BI Dashboards
+- CSV Dataset  
+- SSIS ETL Process  
+- SQL Server Staging Table  
+- Dimension Tables  
+- Fact Table  
+- Power BI Dashboards  
 
 ## Data Warehouse Design
 
