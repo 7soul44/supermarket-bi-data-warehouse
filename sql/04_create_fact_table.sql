@@ -1,4 +1,8 @@
--- CREATE FACT TABLE --
+-- =====================================================
+-- Project: Supermarket BI Data Warehouse
+-- Script: 04_create_fact_table.sql
+-- Description: Creation of the fact table and foreign key relationships
+-- =====================================================
 
 USE SupermarketDW;
 GO
@@ -19,6 +23,8 @@ CREATE TABLE dbo.Fact_Sales (
     GrossIncome DECIMAL(10,2),
     Rating DECIMAL(10,2),
 
+    -- Foreign keys connect the fact table with the related dimension tables
+    
     CONSTRAINT FK_FactSales_Date FOREIGN KEY (DateKey) REFERENCES dbo.Dim_Date(DateKey),
     CONSTRAINT FK_FactSales_Product FOREIGN KEY (ProductKey) REFERENCES dbo.Dim_Product(ProductKey),
     CONSTRAINT FK_FactSales_Customer FOREIGN KEY (CustomerKey) REFERENCES dbo.Dim_Customer(CustomerKey),
