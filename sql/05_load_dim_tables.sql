@@ -1,4 +1,8 @@
--- LOAD DIMENSION TABLES --
+-- =====================================================
+-- Project: Supermarket BI Data Warehouse
+-- Script: 05_load_dim_tables.sql
+-- Description: Load dimension tables from staging data
+-- =====================================================
 
 USE SupermarketDW;
 GO
